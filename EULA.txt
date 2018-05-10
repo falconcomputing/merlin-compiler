@@ -1,0 +1,761 @@
+FALCON COMPUTING SOLUTIONS, INC.
+
+END USER LICENSE AGREEMENT
+
+
+
+CAREFULLY READ THIS END USER LICENSE AGREEMENT ("AGREEMENT").  BY ACCESSING AND 
+
+USING THE SOFTWARE DELIVERED BY FALCON COMPUTING SOLUTIONS ON THE AWS 
+
+MARKETPLACE, YOU AGREE ON BEHALF OF LICENSEE TO BE BOUND BY THIS AGREEMENT.
+
+
+
+IF LICENSEE DOES NOT AGREE TO ALL OF THE TERMS AND CONDITIONS OF THIS AGREEMENT, 
+
+DO NOT ACCESS OR USE THE SOFTWARE.
+
+
+
+1.    Definitions.
+
+
+
+"Activation Key" shall mean a numeric activation code which must be entered into
+
+the Software before such Software shall be usable.
+
+
+
+"Computer" shall mean a single-user computing device, such as a personal 
+
+computer or laptop.
+
+
+
+"Confidential Information" shall have the meaning assigned to it in Section 6
+
+ ("Confidential Information").
+
+
+
+"Designated Employee" shall have the meaning assigned to it in Section 5 
+
+("Maintenance").
+
+
+
+"Documentation" shall mean all information provided to Licensee by Falcon which
+
+describes the form, features or operation of the Software and which is contained
+
+in a tangible medium, such as written format, tape, magnetic or other media. 
+
+Documentation shall include any Updates or Upgrades of Documentation which 
+
+Falcon may make available to Licensee pursuant to this Agreement.
+
+
+
+"Fees" shall mean License Fees, Maintenance Fees, either or both.
+
+
+
+"Floating" shall mean with respect to a license of Software that it is limited 
+
+to use of Software on a particular, identified Network.
+
+
+
+"License Fee" shall mean those Fees quoted to Licensee as described in 
+
+Subsection 7.1 ("Fees").
+
+
+
+"Maintenance" shall have the meaning assigned to it in Subsetcion 5 
+
+("Maintenance").
+
+
+
+"Maintenance Fee" shall mean those Fees dquoted to Licensee as described in 
+
+Subsection 7.1 ("Fees").
+
+
+
+"Network" shall mean a Licensee local area network which extends no farther than
+
+one (1) kilometer from the street address of Licensee's principal place of 
+
+business.
+
+
+
+"Node-Locked" shall mean with respect to a license of Software that it is 
+
+limited to use of Software on a particular, identified Computer.
+
+
+
+"Perpetual License" shall have the meaning assigned to it in Subsection 2.2 
+
+("Perpetual License").
+
+
+
+"Software" shall mean the object code form of the computer software provided
+
+by Falcon on AWS marketplace including associated Documentation, Updates and 
+
+Upgrades.
+
+
+
+"Time-Based License" shall have the meaning assigned to it in Subsection 2.1 
+
+("Time-Based License").
+
+
+
+"Updates" shall mean revisions to the Software which correct errors or add 
+
+minor functional improvements to Software, and which are normally provided 
+
+without additional charge to customers of Falcon as part of Maintenance.
+
+
+
+"Upgrades" shall mean revisions to the Software which add major functional 
+
+improvements to Software, and which are normally not provided without 
+
+additional charge to customers of Falcon as part of Maintenance.
+
+
+
+2.    License.  Subject to Licensee's performance hereunder, including without
+
+limitation the timely payment of Fees and the receipt from Falcon of the 
+
+appropriate Activation Key, Falcon hereby grants to Licensee the following 
+
+licenses, which may be either Node-Locked or Floating:
+
+
+
+2.1    Time-Based License.  A non-exclusive, non-transferable license (without 
+
+the right to grant sublicenses) to use, execute and display the Software for a 
+
+period of one (1) year from the Effective Date (a "Time Based License"); or
+
+
+
+2.2    Perpetual License. A non-exclusive, non-transferable license (without the
+
+right to grant sublicenses) to use, execute and display the Software for the 
+
+duration of Falcon’s copyright therein (a "Perpetual License")
+
+
+
+3.    License Limitations. The Software, including Documentation, is licensed to 
+
+Licensee for internal use only related to designing FPGAs or managing FPGAs/GPUs 
+
+by Licensee.  In connection with Licensee’s use of the Software, Licensee shall 
+
+comply with all applicable laws, rules and regulations.  Licensee shall not, and 
+
+shall not permit any third party to: (i) copy, modify, translate, or create 
+
+derivative works of the Software; (ii) reverse engineer, decompile, disassemble 
+
+or otherwise attempt reconstruct, identify or discover any source code, 
+
+underlying ideas, underlying user interface techniques, or algorithms of the 
+
+Software, (iii) lend, lease, offer for sale, sell or otherwise use or permit the
+
+use of the Software for the benefit of third parties; or (iv) attempt to 
+
+circumvent any license, timing or use restrictions that are built into the 
+
+Software or the Activation Key.  Licensee warrants to Falcon that is not a 
+
+competitor of Falcon, or a parent, affiliate, subsidiary or division of a 
+
+competitor of Falcon, or working with or assisting, directly or indirectly, any 
+
+such competitor of Falcon.
+
+
+
+4.    Ownership.  Except for the limited rights granted in Section 2 ("License")
+
+above, Falcon retains all right, title and interest, including all intellectual 
+
+property rights, in and to the Software, including the Documentation.  Licensee 
+
+acknowledges that the Software constitutes Falcon’s valuable trade secrets and 
+
+improper use or disclosure would cause Falcon irreparable harm.  Accordingly, 
+
+Licensee agrees to use the Software solely as authorized in this Agreement.  
+
+Licensee further acknowledges that the license granted pursuant to this Agreement
+
+is a license, not a sale, and does not transfer to Licensee title or ownership 
+
+of the Software or any copy thereof.  All rights not expressly granted hereunder
+
+are reserved to Falcon. 
+
+
+
+5.    Maintenance.  For each Time-Based License, and for each Perpetual License 
+
+for which Licensee has timely paid in advance the associated Maintenance Fee as
+
+quoted to Licensee as described in Subsection 7.1 ("Fees"), Falcon shall use its 
+
+commercially reasonable efforts to provide Maintenance as hereinafter provided; 
+
+Licensee shall designate in writing a customer contact ("Designated Employee"), 
+
+and may designate an alternate Designated Employee, who shall be responsible for
+
+coordinating Maintenance with Falcon. The Designated Employee and alternate may 
+
+be changed upon written notice to Falcon. 
+
+
+
+“Maintenance” shall consist of:
+
+(1)    The right of Licensee’s Designated Employee to contact Falcon by 
+
+telephone or e-mail and to consult with Falcon regarding the installation, 
+
+functions and operation of the Software;
+
+
+
+(2)    The right of Licensee’s Designated Employee to contact Falcon by 
+
+telephone or e-mail to consult with Falcon regarding errors in the Software
+
+ which errors have been brought to Falcon’s attention by Licensee’s Designated 
+
+Employee;
+
+
+
+(3)    The right to obtain without additional charge from Falcon certain Updates
+
+for the Software which Updates are reasonably necessary in Falcon’s judgment to 
+
+correct reproducible errors which errors have been brought to Falcon’s attention 
+
+by Licensee’s Designated Employees; 
+
+
+
+(4)    The right to obtain at an additional charge from Falcon certain Upgrade 
+
+for the Software as such Upgrades are made commercially available by Falcon; and
+
+
+
+(5)    The right to have Falcon use its commercially reasonable effort to correct 
+
+errors other than those described above which have been brought to Falcon’s 
+
+attention by Licensee’s Designated Employee.
+
+
+
+Hours and Facilities.  Falcon shall make Maintenance available only during 
+
+Falcon’s normal business days and normal business hours.
+
+
+
+Limitations.  Licensee must elect to receive Maintenance on either all or none 
+
+of the Software, and may not elect to receive Maintenance on some Software and 
+
+not on other Software.  Falcon shall have no obligation to provide Maintenance 
+
+for any Software which is not the most recent version or release or for which 
+
+Falcon has provided Updates which have not been applied by Licensee to the 
+
+Software.  Any failure of Licensee to pay all Maintenance Fees as invoiced by 
+
+Falcon shall, at Falcon’s sole option, immediately and permanently eliminate any 
+
+obligation of Falcon to provide Maintenance hereunder.
+
+
+
+Additional Services.  In the event that Licensee desires to obtain from Falcon 
+
+additional services with respect to the Software, Falcon agrees to negotiate 
+
+in good faith for the provision of such services at rates no higher than 
+
+Falcon’s normal commercial rates, and subject to terms as may be agreed to by 
+
+the parties in writing.
+
+
+
+6.    Confidential Information.
+
+6.1    Definition.  “Confidential Information” means any and all information 
+
+disclosed by Falcon which is designated as confidential, including but not 
+
+limited to: (i) the Software, in both source code and object code formats (and 
+
+including without limitation the Documentation); and (ii) any financial 
+
+information, product plans, business plans, trade secrets, technology diagrams,
+
+algorithms, designs, drawings, sketches, flow charts, benchmark results or other
+
+performance-related measurements relating to the Software or any other 
+
+proprietary information, whether transmitted orally, in writing, electronically,
+
+or by any other media. 
+
+
+
+6.2    Non-Use and Non-Disclosure.  Licensee agrees:  (a) to use Confidential 
+
+Information solely in accordance with the provisions of this Agreement; and (b)
+
+not to disclose, or permit to be disclosed, either directly or indirectly, 
+
+Confidential Information to any third party.  Further and without limiting the 
+
+generality of the foregoing, Licensee agrees that neither it, nor any of its 
+
+employees, will use for their own account or for the account of any third party 
+
+any Confidential Information, and that Licensee shall be fully responsible for 
+
+the conduct of its employees for any breach of this Agreement. Licensee shall 
+
+immediately notify Falcon if it discovers or has reason to suspect any 
+
+unauthorized use or disclosure of any Confidential Information. Confidential 
+
+Information shall not include any information that: (w) was publicly available 
+
+at the time of disclosure; (x) becomes publicly available after disclosure other
+
+than by action or inaction of Licensee; (y) is obtained from third parties not 
+
+under confidentiality restrictions; or (z) is required to be disclosed by order
+
+of a court or other governmental entity; provided, however, that in such case 
+
+Licensee shall give Falcon prompt written notice of such requirement, and shall 
+
+cooperate reasonably with Falcon in the obtaining of a protective or similar 
+
+order with respect thereto.
+
+
+
+6.3    Remedy.  If Licensee breaches, or threatens to breach, the provisions of 
+
+this Section 6 ("Confidential Information"), Licensee agrees that Falcon would 
+
+have no adequate remedy at law and would therefore be entitled to immediate 
+
+injunctive and other equitable relief, without bond and without the necessity of
+
+showing actual money damages.
+
+
+
+7.    Payment.
+
+7.1    Fees.  The License Fees and Maintenance Fees are quoted from time to time 
+
+by Falcon in a written price quotation, and confirmed in a written purchase order
+
+confirming such prices which is submitted by Licensee, and accepted by Falcon.  
+
+As a matter of administrative convenience, Falcon agrees that Licensee may use 
+
+its standard form of purchase order, which may contain pre-printed or other 
+
+terms not consistent with this Agreement; such terms shall not be binding on 
+
+either party, and shall not be deemed to affect this Agreement.
+
+
+
+7.2     Payment Terms.  Licensee shall pay all Fees invoiced by Falcon within 
+
+thirty (30) days of the invoice date.  For any amounts not paid within thirty 
+
+(30) days of invoice date, Licensee shall pay Falcon one and one half percent 
+
+(1.5%) interest per month on the unpaid balance, or the maximum amount permitted
+
+by law, whichever is less, until all past due amounts are satisfied. Licensee 
+
+shall further be responsible for all costs incurred by Falcon in connection with 
+
+any claim made by Falcon in order to recover payment of overdue fees, including 
+
+without limitation, all professional fees and legal costs.  For any late payment 
+
+of Fees, Falcon may also treat such late payment as a material breach of this 
+
+Agreement, may therefore suspend its own performance, and may exercise such 
+
+other rights as Falcon may have under law.
+
+
+
+7.3    Taxes.  Fees specified hereunder do not include and are net of any 
+
+foreign or domestic governmental taxes or charges of any kind that may be 
+
+applicable to the Software, including without limitation excise, sales, use, 
+
+property, license, value-added taxes, franchise, income, withholding or similar 
+
+taxes, customs or other import duties or other taxes, tariffs or duties other 
+
+than taxes which are imposed based on the net income of Falcon.  Any such taxes 
+
+which are otherwise imposed on payments to Falcon shall be the sole 
+
+responsibility of Licensee. 
+
+
+
+8.    Term And Termination.
+
+8.1    Term.  This Agreement will remain in effect until terminated pursuant to 
+
+this Section 8 ("Term and Termination").  
+
+
+
+8.2    Termination by Licensee.  Licensee may terminate this Agreement 
+
+immediately, at any time, upon notice to Falcon and by destroying the Software 
+
+(including Documentation) and all Falcon Confidential Information, and any and 
+
+all copies thereof.
+
+
+
+8.3    Termination for Cause.  If either party materially breaches this 
+
+Agreement (including the obligation to timely pay Fees), the non-breaching party
+
+may terminate this Agreement upon notice if the breach is not cured within 
+
+thirty (30) days of written notice thereof to the breaching party. 
+
+
+
+8.4    Insolvency.  If Licensee (i) makes a general assignment for the benefit 
+
+of creditors, (ii) is adjudicated bankrupt, (iii) files a voluntary petition for 
+
+bankruptcy or reorganization, or has a petition filed against it for an 
+
+adjudication in bankruptcy or reorganization and such petition is not dismissed 
+
+within sixty (60) days, or (iv) applies for or permits the appointment of a 
+
+receiver, trustee or custodian for any of its property or assets, Falcon may 
+
+terminate this Agreement immediately upon notice.
+
+
+
+8.5    Effect of Termination.  Upon termination of this Agreement for any 
+
+reason, the licenses granted by Falcon shall immediately terminate, and Licensee
+
+shall immediately destroy the Software (including Documentation) and all Falcon 
+
+Confidential Information, and any and all copies thereof, and shall provide to 
+
+Falcon written certification within five (5) days of such destruction.
+
+
+
+8.6    Survival.  The provisions of Section 1 ("Definitions"), Section 4 
+
+("Ownership"), Section 6 ("Confidential Information"), Section 7 ("Payment"), 
+
+Subsection 8.5 ("Effect of Termination"), Subsection 9.2 ("Disclaimer"), 
+
+Section 11 ("Limitation of Liability"), and Section 13 ("Miscellaneous") shall 
+
+survive any expiration or termination of this Agreement.
+
+
+
+9.    Warranty And Disclaimer. 
+
+9.1    By Falcon.  Falcon warrants to Licensee that for a period of ninety (90) 
+
+days after installation, the media on which the Software is delivered shall be free 
+
+from material defects in materials or workmanship.  As Falcon's sole and 
+
+exclusive liability, and Licensee's sole and exclusive remedy, for any breach of
+
+such warranty, Falcon will repair or replace any defective media called to 
+
+Falcon's attention during such warranty period.  The foregoing warranty will not 
+
+apply to Licensee’s unauthorized use of the Software.
+
+
+
+9.2    Disclaimer.  Except for the limited warranty set forth above, THE 
+
+SOFTWARE (INCLUDING DOCUMENTATION) AND ALL DELIVERABLE ITEMS PROVIDED HEREUNDER 
+
+BY FALCON ARE PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND. FALCON MAKES NO 
+
+PROMISES, REPRESENTATIONS OR WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, 
+
+OR OTHERWISE, WITH RESPECT TO ANY OF THE FOREGOING ITEMS, INCLUDING AS TO THEIR 
+
+CONDITION, THEIR CONFORMITY TO ANY REPRESENTATION OR DESCRIPTION, OR THE 
+
+EXISTENCE OF ANY LATENT OR PATENT DEFECTS, AND FALCON SPECIFICALLY DISCLAIMS ALL 
+
+OTHER EXPRESS, IMPLIED OR STATUTORY WARRANTIES, INCLUDING ANY WARRANTIES OF 
+
+MERCHANTABILITY, NONINFRINGEMENT, TITLE OR FITNESS FOR A PARTICULAR PURPOSE, AS 
+
+WELL AS ANY LOCAL JURISDICTIONAL ANALOGUES TO THE ABOVE.  FALCON DOES NOT 
+
+WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE OR THAT THE SOFTWARE WILL WORK 
+
+WITHOUT INTERRUPTIONS.
+
+
+
+10.    Indemnity.
+
+10.1    By Falcon.  Falcon shall defend and/or settle all third party claims 
+
+alleging direct infringement by the Software of any third party copyright, 
+
+trademark or trade secret arising out of or related to Licensee’s authorized 
+
+use of the Software, and Falcon shall pay all damages finally awarded; provided 
+
+that Licensee:  (a) promptly notifies Falcon in writing of any claim, action, 
+
+suit, or other proceeding brought by third parties for which it is seeking 
+
+indemnification; (b) provides Falcon with sole control of the defense and/or 
+
+settlement thereof; and (c) provides Falcon, at Falcon’s request and expense, 
+
+with reasonable assistance and full information with respect thereto.  Licensee
+
+shall have the right to participate, at its own expense, with counsel of its own
+
+choosing in the defense and/or settlement of such claim, suit or proceeding. If
+
+the Software becomes, or in Falcon's opinion is likely to become, the subject of 
+
+a claim of infringement, Falcon may, in its sole discretion: (x) procure for 
+
+Licensee the right to continue using the Software; (y) replace or modify the 
+
+Software so that it becomes non-infringing; or (z) terminate the license for 
+
+such Software, and grant Licensee credit for the associated License Fees based 
+
+on a five (5) year straight-line depreciation, and accept its return.
+
+
+
+10.2    Limitation.  The indemnification obligations in this Section 10 
+
+("Indemnity") shall not apply to amounts paid in settlement of any claim, suit 
+
+or proceeding if such settlement is effected without the consent of Falcon.  
+
+The failure to deliver written notice to Falcon within a reasonable time after 
+
+the commencement of any such claim, suit or proceeding, if prejudicial to its 
+
+ability to defend such action, shall relieve Falcon of any liability hereunder.
+
+
+
+10.3    Sole Remedy. THE FOREGOING STATES THE SOLE AND EXCLUSIVE LIABILITY OF 
+
+FALCON AND LICENSEE’S SOLE AND EXCLUSIVE REMEDY WITH RESPECT TO INFRINGEMENT OF 
+
+ANY THIRD PARTY INTELLECTUAL PROPERTY RIGHTS.
+
+
+
+11.    Limitation Of Liability. IN NO EVENT SHALL FALCON’S LIABILITY ARISING 
+
+OUT OF OR RELATED TO THIS AGREEMENT EXCEED THE AMOUNT OF LICENSE FEES ACTUALLY 
+
+PAID BY LICENSEE FOR THE SOFTWARE.  EXCEPT FOR LIABILITY UNDER SECTION 2 
+
+("LICENSE"), SECTION 3 ("LICENSE LIMITATIONS"), OR SECTION 6 ("CONFIDENTIAL 
+
+INFORMATION"), IN NO EVENT SHALL EITHER PARTY HAVE ANY LIABILITY FOR ANY 
+
+INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, HOWEVER CAUSED AND ON 
+
+ANY THEORY OF LIABILITY, WHETHER FOR BREACH OF CONTRACT, TORT (INCLUDING 
+
+NEGLIGENCE) OR OTHERWISE, ARISING OUT OF OR RELATED TO THIS AGREEMENT, INCLUDING
+
+BUT NOT LIMITED TO LOSS OF ANTICIPATED PROFITS OR LOSS OR INTERRUPTION OF USE OF
+
+ANY FILES, DATA OR EQUIPMENT, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH 
+
+DAMAGES. THESE LIMITATIONS SHALL APPLY NOTWITHSTANDING ANY FAILURE OF ESSENTIAL 
+
+PURPOSE OF ANY LIMITED REMEDY.  THE PARTIES AGREE THAT THE FOREGOING LIMITATIONS 
+
+REPRESENT A REASONABLE ALLOCATION OF RISK UNDER THIS AGREEMENT.
+
+
+
+12.    U.S. Government Restricted Rights.  The Software (including Documentation)
+
+is deemed to be “commercial computer software” and “commercial computer software 
+
+documentation”, respectively, pursuant to DFAR Section 227.7202 and FAR Section 
+
+12.212, as applicable.  Any use, modification, reproduction, release, 
+
+performing, displaying or disclosing of the Software by the U.S. government will 
+
+be governed solely by the terms of this Agreement and will be prohibited except 
+
+to the extent expressly permitted by the terms of this Agreement.
+
+
+
+13.    Miscellaneous.
+
+13.1    Assignment.  Licensee may not assign this Agreement or any rights or 
+
+obligations hereunder, directly or indirectly, in whole or in part, by operation 
+
+of law or otherwise, without the prior written consent of Falcon. Any attempted 
+
+assignment in derogation of the foregoing shall be null and void. Falcon may 
+
+assign this Agreement in whole or in part upon notice.  Subject to the 
+
+foregoing, this Agreement will inure to the benefit of and be binding upon the 
+
+parties and their respective successors and permitted assigns.  
+
+
+
+13.2    Export Regulations.  Licensee understands that Falcon is subject to 
+
+regulation by agencies of the U.S. government, including, but not limited to, 
+
+the U.S. Department of Commerce, which prohibit export or diversion of certain 
+
+technical products to certain countries.  Licensee warrants that it will comply 
+
+in all respects with the Export Administration Regulations and all other export 
+
+and re-export restrictions applicable to the technology and documentation 
+
+licensed hereunder.
+
+
+
+13.3    Severability.  If any provision of this Agreement is held by a court of 
+
+competent jurisdiction to be contrary to law the remaining provisions of this 
+
+Agreement will remain in full force and effect.
+
+
+
+13.4    Force Majeure.  Neither party shall be responsible for any failure to 
+
+perform its obligations under this Agreement, other than payment obligations, 
+
+due to war, riot, embargoes, strikes, failure of telecommunications or 
+
+electrical power supplies, or other acts of God (“Force Majeure”); provided 
+
+that, the party unable to perform due to a Force Majeure notifies the other 
+
+party immediately of such inability to perform and takes all reasonable steps 
+
+to avoid non-performance and to resume performance as soon as practicable.
+
+
+
+13.5    Governing Law and Jurisdiction.  This Agreement is governed by and 
+
+construed under the laws of the State of California without reference to conflict
+
+of laws principles.  All disputes arising out of or related to this Agreement 
+
+will be subject to the exclusive jurisdiction of the state and federal courts 
+
+located in Los Angeles County, and the parties hereby submit to the exclusive 
+
+jurisdiction and venue of these courts.
+
+
+
+13.6    Modification and Waiver.  No waiver or modification of this Agreement 
+
+will be valid unless in writing signed by both parties.  The waiver of a breach 
+
+of any term hereof will in no way be construed as a waiver of any other term or 
+
+breach hereof.
+
+
+
+13.7    Entire Agreement.  This Agreement embodies the entire understanding of 
+
+the parties and supersedes any previous or contemporaneous communications, 
+
+whether oral or written; and may be amended only by a writing signed by both 
+
+parties. 
+
+
+
+14 List of Open Source and Third Parties Licenses
+
+* ROSE Compiler Infrastructure http://rosecompiler.org/ROSE_HTML_Reference/group__license.html
+
+* LLVM Compiler Infrastructure http://releases.llvm.org/4.0.0/LICENSE.TXT
