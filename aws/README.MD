@@ -21,9 +21,6 @@ Steps to create EC2 instance to include Merlin Compiler and SDAccel:
 After you create one instance successfully, login to this instance, replace INSTANCE_IP with the actual IP
 ssh -i ~/.ssh/user.pem centos@<INSTANCE_IP>
 
-## Settings on AWS F1 FPGA
-$export SDK_DIR /home/centos/src/project_data/aws-fpga/sdk/SDAccel
-
 ## Example
 $cd /home/centos/merlin-examples/vec_add/build/
 $make
