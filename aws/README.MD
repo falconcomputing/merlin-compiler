@@ -1,12 +1,13 @@
 ## Falcon image for Merlin Compiler on AWS
 
-License：
-Falcon License: A valid license needs to be setup in the environment variable $FALCONLM_LICENSE_PATH. If the license file is improperly configured, an error message will be reported. And this is a BYOL (Bring Your Own License) product. Please email support@falcon-computing.com to acquire the license. 
+License:
+Falcon License: A valid license needs to be setup in the environment variable $FALCONLM_LICENSE_PATH. If the license file is improperly configured, an error message will be reported. And this is a BYOL (Bring Your Own License) product. Please email support@falcon-computing.com to acquire the license.
+
+FALCONLM_LICENSE_FILE=/path/to/license.lic or port@server
 
 Also please make sure the Xilinx SDK license is available in the environment variable $XILINXD_LICENSE_FILE.
 
-FALCONLM_LICENSE_FILE=/path/to/license.lic or <port>@<server>
-XILINXD_LICENSE_FILE=/path/to/license.lic or <port>@<server>
+XILINXD_LICENSE_FILE=/path/to/license.lic or port@server
 
 Steps to create EC2 instance to include Merlin Compiler and SDAccel:
 1. open a web browser and login to EC2 Management Console
