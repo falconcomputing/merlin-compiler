@@ -1,5 +1,5 @@
 ## Readme: Vector Addition Example for MerlinCC
-Copyright (C) 2017 Falcon Computing Solutions, Inc. - All rights reserved.
+Copyright (C) 2015-2018 Falcon Computing Solutions, Inc. - All rights reserved.
 
 Description:
 This example shows how to effectively use the ACCEL 'parallel' pragma to 
@@ -43,8 +43,8 @@ Usage:
   $ cd build
 
 - View the Makefile and modify the VENDOR variable and target platform per your 
-  requirements. If using AWS F1, modify the S3_OPT variable as well:
-  $ vi Make (or use whatever your fav editor is)
+  requirements. 
+  $ vi Makefile (or use whatever your fav editor is)
 
 - List all the make targets for your reference:
   $ make
@@ -59,7 +59,7 @@ Usage:
   $ make mcc_acc
 
 - Generate the simulation binary of the kernel, recompile host code to use the 
-  kernel binary file into an executable named 'test_acc', and run it on the 
+  kernel binary file into an executable named 'test_acc_sim', and run it on the 
   host to verify functionality.
   After running the executable, you can view profiling information in 
   profile.mon (Intel) or sdaaccel_profile_summary.html (Xilinx).
@@ -75,10 +75,8 @@ Usage:
   with the FPGA binary.
   After running the executable, you can view profiling information in 
   profile.mon (Intel) or sdaaccel_profile_summary.html (Xilinx).
-  $ make mcc_runaccexe
+  $ make mcc_accexe
 
 Notes:
 - The binary file extension for Intel is .aocx and for Xilinx is .xclbin 
-- You can view reports at the various stages of the flow in the 
-  'merlincc_report' directory.
-
+- You can view reports at the various stages of the flow in the current directory named merlin.log
