@@ -12,7 +12,7 @@ XILINXD_LICENSE_FILE=/path/to/license.lic or port@server
 Steps to create EC2 instance to include Merlin Compiler and SDAccel:
 1. open a web browser and login to EC2 Management Console
 2. Click IMAGES->AMIs on the left side of the page
-3. Get the AMI ID (ami-80e36dff) or AMI Name (merlin-compiler-2.1.1b) which includes Merlin Compiler and SDAccel setup
+3. Get the AMI ID (ami-9ef39ce1) or AMI Name (merlin-compiler-2.1.1c) which includes Merlin Compiler and SDAccel setup
 4. Click Launch on the left side of the page
 5. on step 2 for instance type please choose General purpose (m4.2xlarge) and click Next
 6. on step 3 till step7, just use default settings and click Review and Launch
@@ -20,6 +20,9 @@ Steps to create EC2 instance to include Merlin Compiler and SDAccel:
 
 After you create one instance successfully, login to this instance, replace INSTANCE_IP with the actual IP
 ssh -i ~/.ssh/user.pem centos@<INSTANCE_IP>
+
+Account configuration:
+`~/.aws/{config,credentials}` have to be created by the user through 'aws configure'
 
 ## Example
 $cd /home/centos/merlin-examples/vec_add/build/
