@@ -1,0 +1,12 @@
+*__merlin*
+*.so
+*.swp
+*profile*
+*test
+*test_*
+*.mco
+*.aoco
+*.aocx
+*.xclbin
+*.json
+*merlincc_report/
