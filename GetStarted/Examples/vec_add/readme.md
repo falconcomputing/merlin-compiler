@@ -35,7 +35,6 @@ Directory Structure:
 ├── readme.md
 └── src
     ├── main.cpp
-    ├── vec_add.cpp
     └── vec_add_kernel.cpp
 ```
 Usage:

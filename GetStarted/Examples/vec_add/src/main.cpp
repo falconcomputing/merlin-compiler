@@ -31,32 +31,28 @@ int main(int argc, char* argv[])
     int * a = (int *)alignedMalloc(sizeof(int)*VEC_SIZE); 
     int * b = (int *)alignedMalloc(sizeof(int)*VEC_SIZE); 
     int * c = (int *)alignedMalloc(sizeof(int)*VEC_SIZE); 
-    int * c_acc = (int *)alignedMalloc(sizeof(int)*VEC_SIZE); 
 
     // init
     for(i=0; i<VEC_SIZE; i++) {
 	    a[i] = i;
 	    b[i] = 2*i;
 	    c[i] = 1;
-	    c_acc[i] = 1;
     }    
 
     printf("Starting Vector Addition Example \n");
 
-    // execute original reference code
-    vec_add(a, b, c, inc);
-
     // execute kernel code 
 #ifdef MCC_ACC
-    __merlin_vec_add_kernel(a, b, c_acc, inc);
+    __merlin_vec_add_kernel(a, b, c, inc);
+    __merlin_release();
 #else
-    vec_add_kernel(a, b, c_acc, inc);
+    vec_add_kernel(a, b, c, inc);
 #endif
 
     // test results
     int err = 0;
     for(i=0; i<VEC_SIZE; i++) {
-        if(c[i] != c_acc[i]) {
+        if(c[i] != a[i] + b[i] + inc) {
             err++;
         }
     }
@@ -64,11 +60,6 @@ int main(int argc, char* argv[])
     free(a);
     free(b);
     free(c);
-    free(c_acc);
-
-#ifdef MCC_ACC
-    __merlin_release();
-#endif
 
     if (err) {
         printf("Test failed %d\n",err);

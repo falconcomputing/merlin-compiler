@@ -4,7 +4,6 @@
 VENDOR=XILINX
 DEVICE=xilinx_vcu1525_dynamic_5_0
 #DEVICE=xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0
-#DEVICE=F1
 
 #VENDOR=INTEL
 #DEVICE=pac_a10
@@ -14,7 +13,7 @@ DEVICE=xilinx_vcu1525_dynamic_5_0
 #S3_OPT=-s3_bucket=<YOUR_BUCKET_NAME> -s3_dcp_key=dcp -s3_logs_key=log
 
 # Host Code Compilation settings
-HOST_SRC_FILES=../src/main.cpp ../src/vec_add.cpp
+HOST_SRC_FILES=../src/main.cpp 
 
 # Executable names and arguments
 EXE=test
