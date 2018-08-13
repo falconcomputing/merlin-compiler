@@ -1,6 +1,7 @@
 ## Falcon image for Merlin Compiler on AWS
 
-License:
+### License:
+ ```
 Falcon License: A valid license needs to be setup in the environment variable $FALCONLM_LICENSE_PATH. If the license file is improperly configured, an error message will be reported. And this is a BYOL (Bring Your Own License) product. Please email support@falcon-computing.com to acquire the license.
 
 FALCONLM_LICENSE_FILE=/path/to/license.lic or port@server
@@ -23,8 +24,10 @@ ssh -i ~/.ssh/user.pem centos@<INSTANCE_IP>
 
 Account configuration:
 `~/.aws/{config,credentials}` have to be created by the user through 'aws configure'
-
-## Example
+ ```
+ 
+### Example
+ ```
 $cd /home/centos/merlin-examples/vec_add/build/
 $make
 **** Merlin Compiler Makefile
@@ -53,7 +56,8 @@ $/home/centos/src/project_data/aws-fpga/sdk/SDAccel/tools/create_sdaccel_afi.sh 
 A file with extension .awsxclbin will be generated after the compilation is completed.
 
 .awsxclbin file is a wrapper that has the information (AGFI ID) for the F1 runtime library to find the AFI to configure the F1 FPGA. Even though the .awsxclbin file is generated right away, the actual AFI generation can take up to an hour to complete. Run the command below to check the AFI status. Once the AFI is available, you can run the test on AWS F1 FPGA.
-
+ ```
+ 
 $aws ec2 describe-fpga-images
 
             …
