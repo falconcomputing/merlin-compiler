@@ -9,16 +9,16 @@ FALCONLM_LICENSE_FILE=/path/to/license.lic or port@server
 Also please make sure the Xilinx SDK license is available in the environment variable $XILINXD_LICENSE_FILE.
 
 XILINXD_LICENSE_FILE=/path/to/license.lic or port@server
- ```
+
 Steps to create EC2 instance to include Merlin Compiler and SDAccel:
 1. open a web browser and login to EC2 Management Console
 2. Click IMAGES->AMIs on the left side of the page
-3. Get the AMI ID (ami-06afc34f7444d8081) or AMI Name (merlin-compiler-2.2.3b) which includes Merlin Compiler and SDAccel (2017.4) setup
+3. Get the AMI ID (ami-04eba92ed4b7323eb) or AMI Name (merlin-compiler-2.2.4a) which includes Merlin Compiler and SDAccel (2017.4) setup
 4. Click Launch on the left side of the page
 5. on step 2 for instance type please choose General purpose (m4.2xlarge) and click Next
 6. on step 3 till step7, just use default settings and click Review and Launch
 7. on step 7, click Launch and you will select an existing key pair or create a new key pair, please choose one accordingly and launch instance
-
+ ```
 After you create one instance successfully, login to this instance, replace INSTANCE_IP with the actual IP
 ssh -i ~/.ssh/user.pem centos@<INSTANCE_IP>
 
@@ -53,9 +53,9 @@ $/home/aws-fpga/SDAccel/tools/create_sdaccel_afi.sh -xclbin=mykernel.xclbin \
       -o=mykernel -s3_bucket=fcs-fpga -s3_dcp_key=dcp -s3_logs_key=log
 
 A file with extension .awsxclbin will be generated after the compilation is completed.
-
-.awsxclbin file is a wrapper that has the information (AGFI ID) for the F1 runtime library to find the AFI to configure the F1 FPGA. Even though the .awsxclbin file is generated right away, the actual AFI generation can take up to an hour to complete. Run the command below to check the AFI status. Once the AFI is available, you can run the test on AWS F1 FPGA.
  ```
+.awsxclbin file is a wrapper that has the information (AGFI ID) for the F1 runtime library to find the AFI to configure the F1 FPGA. Even though the .awsxclbin file is generated right away, the actual AFI generation can take up to an hour to complete. Run the command below to check the AFI status. Once the AFI is available, you can run the test on AWS F1 FPGA.
+
  
 $aws ec2 describe-fpga-images
 
