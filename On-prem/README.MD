@@ -10,9 +10,9 @@
 
 #### 2. Downloading and Unpacking Merlin Compiler Package
     Merlin Compiler is packaged as a tar gzip file Merlin_Compiler_xxxx.tar.gz where xxxx is the date and version number.  
-    •	Download the tar gzip file from the link provided by the Falcon support team
+    •   Download the tar gzip file from the link provided by the Falcon support team
     •	Extract and install the tool using the following command:
-        $tar xzvf Merlin_Compiler_xxxx.tar.gz
+            $tar xzvf Merlin_Compiler_xxxx.tar.gz
     •	A directory named “Merlin_Compiler_xxxx” is created. This user guide uses <merlin_root> to refer to the full pathname of this directory for illustration purpose
 
 #### 3. Configuring Merlin Compiler Installation
@@ -69,4 +69,3 @@ NOTE:
     •   Save the node-locked license file on the server
     •   Each user need to set the environment variable below to use Merlin Compiler license
         $export FALCONLM_LICENSE_FILE=/path/to/license.lic
-
