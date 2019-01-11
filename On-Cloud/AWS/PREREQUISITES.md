@@ -26,9 +26,10 @@ This section is a step by step guide on how to acquire these resources to be abl
 
 ***Setting up a Merlin AMI, EC2 Instances to Compile***<br>
 To compile with Merlin on AWS, you need to create EC2 instance that includes both Merlin Compiler and SDAccel. This can be achieved via the Merlin AMI and following these steps:
+* Contact support@falcon-computing.com for AMI ID and License
 * Launch your browser and login to EC2 Management Console
 * Click IMAGES->AMIs on the left side of the page
-* Get the AMI ID which also includes Merlin Compiler and SDAccel setup
+* Search for the AMI ID provided by Falcon suppot. This AMI includes Merlin Compiler and SDAccel setup.
 * Click Launch on the left side of the page
 * **C4.2XLarge** is recommended to compile your aplication with Merlin
 * On step 3 till step7, just use default settings and click Review and Launch
