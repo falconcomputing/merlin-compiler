@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package parameters;
+
+message blackScholes {
+	  required float initPrice = 1;
+		required float strikePrice = 2;
+		required float rate = 3;
+		required float volatility = 4;
+		required float time = 5;
+		required string kernel_name = 6;
+}

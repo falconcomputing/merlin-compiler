@@ -1,20 +1,3 @@
-TOPTARGETS = cpu intel xilinx clean
-
-ifeq ($(MAKECMDGOALS),clean)
-   runargs = clean
-else
-   runargs = $(wordlist 2, $(words $(MAKECMDGOALS)), $(MAKECMDGOALS))
-endif
-
-
-CPUSUBDIRS = cpu_multi_core 
-
-INTELSUBDIRS = intel_dse intel_mo 
-
-XILINXSUBDIRS = xilinx_dse xilinx_mo 
-
-SUBDIRS = $(CPUSUBDIRS) $(INTELSUBDIRS) $(XILINXSUBDIRS)
-
 default: 
 	@echo "**************************************************************************************"
 	@echo "* Merlin Compiler Makefile                                                           *"
@@ -25,8 +8,8 @@ default:
 	@echo "* cpu    : compile for cpu only                                                      *"
 	@echo "* intel  : compile for intel FPGAs                                                   *"
 	@echo "* xilinx : compile for xilinx FPGAs (includes AWS F1)                                *"
-	@echo "* clean  : clean temp files                                                          *"
-	@echo "*                                                                                    *"
+	@echo "* clean  : clean temp files                                                          *" 
+	@echo "*                                                                                    *" 
 	@echo "* Available commands:                                                                *"
 	@echo "*          run - Compile and run executable on CPU without Acceleration (cpu only)   *"
 	@echo "*   mcc_runsim - Generate kernel binary for simulation on CPU and run it             *"
@@ -40,16 +23,19 @@ default:
 	@echo "**************************************************************************************"
 
 
-clean: $(SUBDIRS)
 
-cpu: 	$(CPUSUBDIRS) 
+cpu: 
+	$(MAKE) -C build $(MAKECMDGOALS) 
 
-intel: 	$(INTELSUBDIRS)
+intel: $(SUBDIRS)
+	$(MAKE) -C build $(MAKECMDGOALS)  
 
-xilinx: $(XILINXSUBDIRS) 
+xilinx: $(SUBDIRS)
+	$(MAKE) -C build $(MAKECMDGOALS)  
 
-$(SUBDIRS):
-	$(MAKE) -C $@  $(runargs)
+clean: 
+	$(MAKE) -C build clean  
+
 
 run:
 
@@ -69,4 +55,6 @@ mcc_pkg:
 
 mcc_acc:
 
-.PHONY: $(TOPTARGETS) $(SUBDIRS)
+
+
+

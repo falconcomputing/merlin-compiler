@@ -51,7 +51,8 @@ void run_benchmark( void *vargs ) {
    uint8_t[16]: input-text
    */
 
-void input_to_data(int fd, void *vdata) {
+void input_to_data(int fd, void *vdata) 
+{
   struct bench_args_t *data = (struct bench_args_t *)vdata;
   char *p, *s;
   // Zero-out everything.
@@ -80,7 +81,8 @@ void data_to_input(int fd, void *vdata) {
    %% Section 1
    uint8_t[16]: output-text
    */
-void output_to_data(int fd, void *vdata) {
+void output_to_data(int fd, void *vdata) 
+{
   struct bench_args_t *data = (struct bench_args_t *)vdata;
 
   char *p, *s;
@@ -100,7 +102,8 @@ void data_to_output(int fd, void *vdata) {
   write_uint8_t_array(fd, data->buf, 16);
 }
 
-int check_data( void *vdata, void *vref ) {
+int check_data( void *vdata, void *vref ) 
+{
   struct bench_args_t *data = (struct bench_args_t *)vdata;
   struct bench_args_t *ref = (struct bench_args_t *)vref;
   int has_errors = 0;

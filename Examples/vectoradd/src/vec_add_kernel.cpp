@@ -9,7 +9,9 @@
 void vec_add_kernel(int a[VEC_SIZE], int b[VEC_SIZE], int c[VEC_SIZE], int inc)
 {
     int j;
+#ifndef BASELINE
 #pragma ACCEL parallel factor=16
+#endif
     for (j = 0 ;j < VEC_SIZE; j++) { 
         c[j] = a[j]+b[j]+inc;
     }

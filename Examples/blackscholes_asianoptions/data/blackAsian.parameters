@@ -1,0 +1,6 @@
+initprice: 100
+strikeprice: 105
+rate: 0.1
+volatility: 0.15
+time: 1.0
+kernel_name: "blackAsian"

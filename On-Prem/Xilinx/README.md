@@ -3,7 +3,6 @@
 ### Merlin Compiler Installation and Configuration
 #### 1. System Requirements
     •   CentOS/RedHat 6.9 (or higher) 64-bit with at least 32GB of RAM
-    •   To use Merlin Compiler with Intel FPGA development boards, Intel FPGA SDK for OpenCL v17.0.2 or v17,1.1 is required. Please follow instructions in Intel FPGA SDK for OpenCL Getting Started Guide to obtain a license and install the software and its supported FPGA platforms.
     •   To use Merlin Compiler with Xilinx FPGA development boards, Xilinx SDAccel Development Environment v2017.1 or v2017.4 is required. Please follow instructions in SDx Environments Release Notes, Installation, and Licensing Guide to obtain a license and install the software and its supported FPGA platforms
     •   gcc version must be 4.6.3 or higher
     •   Python 2.7
@@ -23,13 +22,6 @@ NOTE:
 ##### 3.1 Set up environments for FPGA vendors OpenCL SDK
     In general, follow vendor tool setup instructions to set up vendor tools. Just to make sure Merlin can find and invoke vendor tools.
 
-    Run the commands below to set up Intel FPGA SDK for OpenCL 17.1.1
-    $export ALTERA_QUARTUS_HOME=/path/to/Altera/17.1.1
-    $export ALTERAOCLSDKROOT=/path/to/Altera/17.1.1/hld
-    $export AOCL_BOARD_PACKAGE_ROOT=/path/to/Altera/17.1.1/hld/board/a10_ref
-
-    NOTE: Intel Arria 10 GX Development Kit is used as an example. Update ALTERAOCLSDKROOT and AOCL_BOARD_PACKAGE_ROOT to match the actual tool version and target board.
-    
     Run the command below to set up environments for Xilinx SDAccel 2017.4
     $source /path/to/Xilinx/SDx/2017.4/settings64.sh
 
