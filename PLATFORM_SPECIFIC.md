@@ -20,8 +20,8 @@
     </li> 
 <li><a href="On-Prem/README.MD">On Premises</b></td>
   <ul> 
-    <li><a href="On-Prem/Intel/README.md">Using Merlin with standalone Intel FPGA Platform</b></td></li> 
-    <li><a href="On-Prem/Xilinx/README.md">Using Merlin with standalone Xilnx FPGA Platform</b></td></li>
+    <li><a href="On-Prem/Intel/README.md">Using Merlin with Intel FPGA Platform</b></td></li> 
+    <li><a href="On-Prem/Xilinx/README.md">Using Merlin with Xilnx FPGA Platform</b></td></li>
   </ul>
   </li>
 </ul>
