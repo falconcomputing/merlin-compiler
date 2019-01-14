@@ -11,8 +11,10 @@
 </table>
 
 ------------------------------------
+***Creating AWS F1 Instance***<br>
+You will need F1 instance for the following steps to deploy and run your accelerated application using FPGAs. For instructions on how create to F1, please refer to <a href="PREREQUISITES.md">Prerequisites</a> section: 
 
-***Running Your Accelerated Application on AWS F1***
+***Running Your Accelerated Application on AWS F1***<br>
 1. Copy the package 
 Use scp to copy the package files that contains all the necessary files from the compile host to the F1 instance:
 ```
