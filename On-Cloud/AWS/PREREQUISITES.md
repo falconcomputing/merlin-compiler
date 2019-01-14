@@ -19,7 +19,7 @@ This section is a step by step guide on how to acquire these resources to be abl
 * Merlin AMI Instance
 * Merlin License
 * F1 Instance
-* S3 Bucket
+* S3 bucket with the name “fcs-fpga"
 
 ***AWS Account***<br>
 <a href="https://aws.amazon.com/free/">Setup an AWS Account</a>
