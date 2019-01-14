@@ -19,7 +19,7 @@ This section is a step by step guide on how to acquire these resources to be abl
 * Merlin AMI Instance
 * Merlin License
 * F1 Instance
-
+* S3 Bucket
 
 ***AWS Account***<br>
 <a href="https://aws.amazon.com/free/">Setup an AWS Account</a>
@@ -71,6 +71,15 @@ Save the file
 ***Setting up F1, EC2 Instances to Run Application on FPGA***<br>
 After compiling the application using Merlin instance, you will need to launch an AWS F1 instance to run the accelerated application FPGA. using the "FPGA Developer AMI" which comes pre-installed with SDAccel and required licenses.  We recommend **f1.2xlarge** for this step. More detailed instructions can be found 
 <a href="https://github.com/Xilinx/SDAccel_Examples/wiki/Create,-configure-and-test-an-AWS-F1-instance">here</a>.
+
+***Create a S3 bucket with the name “fcs-fpga"***
+
+-	Launch your browser and login to AWS
+-	Click on Services menu; now click on S3 link under Storage category
+-	In the S3 buckets page, click on “Create bucket” button
+-	Enter “fcs-fpga” as the Bucket name; enter the same region name as the C4.2X large instance from the step above
+-	Select defaults for rest of the parameters
 <br>
 <br>
 Start the next module: <a href="COMPILE.md">Compile on AWS with Merlin</a>
+
