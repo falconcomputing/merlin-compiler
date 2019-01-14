@@ -12,10 +12,10 @@
 
 ---------------------------------------
 ### 1.Introduction
-Some cogntive-era applications such as Genomics, Machine Learning inferencing and Big data analytics can be compute-heavy. Accelerating such applications can be achieved by offloading parts of the applications from a typical CPU to other types of hardware, such as FPGAs. For specific categories of applications, FPGAs can deliver much faster results than a typical CPU. This is due to the highly parallel nature inherited in FPGAs by architecture.
+Some cogntive-era applications such as Genomics, Machine Learning inferencing and Big data analytics can be compute-heavy. Accelerating such applications can be achieved by offloading parts of the applications from a typical CPU to other types of hardware, such as FPGAs. For specific categories of applications, FPGAs can deliver much faster results than a typical CPU. This is due to the highly parallel nature inhereted to FPGAs by architecture.
 
 Traditionally, designing for FPGA is done using hardware descriptive languages such as Verilog or VHDL. Learning and using such languages can be quite involved, especially for a software developer.
-The Merlin Compiler from Falcon Computing solves this challenges. It enables software developers to be able to compile their applications for FPGA acceleration without FPGA expertise. Merlin Compiler takes C/C++ code as an input and generates an executable that includes the CPU host-code & the FPGA bitstream . 
+The Merlin Compiler from Falcon Computing solves these challenges. It enables software developers to be able to compile their applications for FPGA acceleration without FPGA expertise. Merlin Compiler takes C/C++ code as an input and generates an executable that includes the CPU host-code & the FPGA bitstream . 
 
 **Why Merlin?**<br>
 By abstracting all the hardware design details away from the software developers, Merlin provides an easier alternative to leverage FPGAs hosted in public clouds (such as Amazon AWS F1 ) or within an on-premises environment. It is able to automatically generate performance comparable to FPGA Ninjas with Hardware expertise working for several weeks or months  using High Level Synthesis such as SDAccel or Intel OpenCl 
