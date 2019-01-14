@@ -16,7 +16,7 @@
 In this tutorial, we will use a simple design “vector_add” to illustrate how to compile, with Merlin and run on AWS F1 instance. These steps can be applied to all the design examples.
 
 **Get the Example code**<br>
-On the Merin instance created in the previous section (please refer to the previous section: <a href="PREREQUISITES.md">Prerequisites</a>)
+On the Merin instance created in the previous section (please refer to the previous section: <a href="PREREQUISITES.md">Prerequisites</a>.
 ```
 git clone https://github.com/falconcomputing/merlin-compiler.git
 cd merlin-compiler/Examples/vectoradd
