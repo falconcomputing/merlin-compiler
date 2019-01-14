@@ -77,6 +77,10 @@ The .xclbin files can be located under:
 * <example_folder>/build/xilinx_dse/
 * <example_folder>/build/xilinx_mo/
 
+Hint: If you haven't created the "fcs-fpga" s3 bucket, please refer to "Create a S3 bucket with the name “fcs-fpga"" in the <a href="PREREQUISITES.md">Prerequisites</a> section. 
+
+
+
 ```
 export SDACCEL_DIR=/home/centos/aws-fpga/SDAccel
 cd vectoradd/build/xilinx_mo 
@@ -88,7 +92,8 @@ Similarly, you can follow same steps for the Xilinx DSE compile under vectoradd/
 .awsxclbin file is a wrapper that has the information (AGFI ID) for the F1 runtime library to find the AFI to configure the F1 FPGA. Even though the .awsxclbin file is generated right away, the actual AFI generation can take up to an hour to complete. 
 Check on the status of the submitted AFI to AWS.
 
-Hint: If you see “ERROR: Directory to_aws already exists”, error simple delete the “to_aws” directory and rerun the command.
+Hint:If you see “ERROR: Directory to_aws already exists”, error simple delete the “to_aws” directory and rerun the command.
+
 
 Run this command to find the FPGA Image ID:
 ```
