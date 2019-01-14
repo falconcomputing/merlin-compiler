@@ -38,20 +38,20 @@ Merlin by taking C/C++ code as an input, opens the door for non-FPGA engineers t
 
 **Manual Optimization:** In this mode, a Merlin user would insert pragmas such as pipeline, parallel, tile etc. that would provide hints to the compiler on how to optimize their code. This mode is useful for developers who have understanding of the FPGA constructs & may have some experience with High Level Synthesis
 
-**Deep Space Exploration (DSE):** DSE eliminates the need for the pragma insertion & only requires the developer to identify the code segments(called kernels)  that need to be accelerated. The optimization is completely handled by the compiler to get good performance. DSE is based on Falcon developed proprietary Machine learning algorithms.<br>
+**Deep Space Exploration (DSE):** DSE eliminates the need for the pragma insertion & only requires the developer to identify the code segments(called kernels)  that need to be accelerated. The optimization is completely handled by the compiler to get good performance. DSE is based on Falcon developed proprietary machine learning algorithms.<br>
 
 <p align="center">
   <img src="images/merlin-diagram.png">
 </p>
 
-**Recommended Merlin Work-Flow**<br>
+**Recommended Merlin Workflow**<br>
 Initial step is to execute the code on CPU and identify the hotspots. A hotspot is an area of the application, that is causing a performance bottleneck. Hotspots are candidates for acceleration on FPGA using Merlin Compiler. 
 
 <p align="center">
   <img src="./images/merlinworkflow.png">
 </p>
 
-To profile the application on the CPU, an open-source profilers such as valgrind and gprof can be leveraged. Also some commercial profiler such as Intel vTune™ are available. 
+To profile the application on the CPU, open-source profilers such as valgrind and gprof can be leveraged. Also some commercial profilers such as Intel vTune™ are available. 
 
 
 In the following sections, we will discuss the kernel compilation and integration phases in more details.
