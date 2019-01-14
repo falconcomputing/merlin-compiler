@@ -86,7 +86,9 @@ $SDACCEL_DIR/tools/create_sdaccel_afi.sh -xclbin=vec_add_kernel_hw.xclbin -o=vec
 Similarly, you can follow same steps for the Xilinx DSE compile under vectoradd/build/xilinx_dse.
 
 .awsxclbin file is a wrapper that has the information (AGFI ID) for the F1 runtime library to find the AFI to configure the F1 FPGA. Even though the .awsxclbin file is generated right away, the actual AFI generation can take up to an hour to complete. 
-Check on the status of the submitted AFI to AWS
+Check on the status of the submitted AFI to AWS.
+
+Hint: If you see “ERROR: Directory to_aws already exists”, error simple delete the “to_aws” directory and rerun the command.
 
 Run this command to find the FPGA Image ID:
 ```
