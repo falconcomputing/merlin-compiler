@@ -12,7 +12,7 @@
 
 ------------------------------------
 ***Creating AWS F1 Instance***<br>
-You will need F1 instance for the following steps to deploy and run your accelerated application using FPGAs. For instructions on how create to F1, please refer to <a href="PREREQUISITES.md">Prerequisites</a> section: 
+You will need F1 instance for the following steps to deploy and run your accelerated application using FPGAs. For instructions, how to create F1, please refer to "Setting up F1, EC2 Instances to Run Application on FPGA" in the <a href="PREREQUISITES.md">Prerequisites</a>. 
 
 ***Running Your Accelerated Application on AWS F1***<br>
 1. Copy the package 
