@@ -1,4 +1,4 @@
-# Copyright (C) 2015-2018 Falcon Computing Solutions, Inc. - All rights reserved.
+# Copyright (C) 2015-2019 Falcon Computing Solutions, Inc. - All rights reserved.
 #####################################################################
 
 # prevent make from printing directory related messages
@@ -168,7 +168,7 @@ $(KERNEL_SRC_FILES) :
 	echo ""
 
 $(AFIGEN_OUTPUT).awsxclbin : $(BITGEN_OUTPUT) 
-	$(MCC_COMMON_DIR)/create_sdaccel_afi.sh -xclbin=$(BITGEN_OUTPUT) \
+	$(SDACCEL_DIR)/tools/create_sdaccel_afi.sh -xclbin=$(BITGEN_OUTPUT) \
 	             -o=$(AFIGEN_OUTPUT) -s3_bucket=fcs-fpga -s3_dcp_key=dcp -s3_logs_key=log
 	cp $(AFIGEN_OUTPUT).awsxclbin $(AFIGEN_OUTPUT_TIMESTAMPED) 
 
