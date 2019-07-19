@@ -2,28 +2,28 @@
 
 ### Merlin Compiler Installation and Configuration
 #### 1. System Requirements
-    •   CentOS/RedHat 6.9 (or higher) 64-bit with at least 32GB of RAM
-    •   To use Merlin Compiler with Xilinx FPGA development boards, Xilinx SDAccel Development Environment v2017.1 or v2017.4 is required. Please follow instructions in SDx Environments Release Notes, Installation, and Licensing Guide to obtain a license and install the software and its supported FPGA platforms
+    •   Linux 64-bit with at least 32GB of RAM
+    •   To use Merlin Compiler with Xilinx FPGA development boards, Xilinx SDAccel Development Environment v2018.3 or v2019.1 is required. Please follow instructions in SDx Environments Release Notes, Installation, and Licensing Guide to obtain a license and install the software and its supported FPGA platforms
     •   gcc version must be 4.6.3 or higher
     •   Python 2.7
 
 #### 2. Downloading and Unpacking Merlin Compiler Package
-    Merlin Compiler is packaged as a tar gzip file Merlin_Compiler_xxxx.tar.gz where xxxx is the date and version number.  
+    Merlin Compiler is packaged as a tar gzip file.  
     •   Download the tar gzip file from the link provided by the Falcon support team
     •   Extract and install the tool using the following command:
-            $tar xzvf Merlin_Compiler_xxxx.tar.gz
-    •   A directory named “Merlin_Compiler_xxxx” is created. This user guide uses <merlin_root> to refer to the full pathname of this directory for illustration purpose
+            $tar xzvf <merlin_package>.tgz
+    •   A directory named “merlin” is created. Follow the README inside "merlin" to install and configure Merlin Compiler
 
 #### 3. Configuring Merlin Compiler Installation
 Merlin supports both C and Bash command shells. Bash shell commands are used in this user guide for illustration purpose.
 NOTE: 
 + A single Merlin Compiler installation can be configured to support both Intel FPGA SDK for OpenCL and Xilinx SDAccel Environment
 + This step can be skipped if you have verified installations of vendors OpenCL SDK by following their software and board installation instructions
-##### 3.1 Set up environments for FPGA vendors OpenCL SDK
+##### 3.1 Set up environments for FPGA vendor's OpenCL SDK
     In general, follow vendor tool setup instructions to set up vendor tools. Just to make sure Merlin can find and invoke vendor tools.
 
-    Run the command below to set up environments for Xilinx SDAccel 2017.4
-    $source /path/to/Xilinx/SDx/2017.4/settings64.sh
+    Run the command below to set up environments for Xilinx SDAccel 2019.1
+    $source /path/to/Xilinx/SDx/2019.1/settings64.sh
 
 ##### 3.2 Run the command below to set up the environment for running the Merlin Compiler
     $export PATH=<merlin_root>/bin:$PATH
@@ -41,21 +41,20 @@ NOTE:
     
     Installing Floating License
     •   Open the license file and replace the highlighted words as instructed below:
-    SERVER HOSTNAME HOST_ID PORT
-    VENDOR falconlm $MERLIN_COMPILER_HOME/bin/falconlm
+    SERVER HOSTNAME host_id PORT
+    VENDOR falconlm $MERLIN_COMPILER_HOME/license/falconlm
     
     HOSTNAME:  license server hostname as returned by Linux hostname command
-    HOST_ID:  license server MAC address
     PORT: network port number for the license
     MERLIN_COMPILER_HOME: absolute path to Merlin Compiler installation directory
     
     •   Run the command below to starting the license server (floating license only)
-    $$MERLIN_COMPILER_HOME/bin/lmgrd -c license.lic -l lmgrd.log
+    $$MERLIN_COMPILER_HOME/license/lmgrd -c license.lic -l lmgrd.log
     Check lmgrd.log file for the status and additional messages of the license server
     
     •   Each user need to set the environment variable below to check out Merlin Compiler license
-    $export FALCONLM_LICENSE_FILE=PORT@HOSTNAME
-    Use the same PORT and HOSTNAME specified in the updated license file.
+    $export LM_LICENSE_FILE=PORT@HOSTNAME
+    Use the same PORT and HOSTNAME specified in the updated license file. If LM_LICENSE_FILE is already defined, just append Merlin license information to the variable.
     
     Installing Node-locked License
     •   Save the node-locked license file on the server

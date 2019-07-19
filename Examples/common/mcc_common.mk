@@ -20,7 +20,7 @@ else ifeq ($(VENDOR),XILINX)
     PLATFORM=sdaccel::$(DEVICE)
     BIN_EXT=xclbin
     SIM_ENV=XCL_EMULATION_MODE
-    SIM_ENV_VAL=1
+    SIM_ENV_VAL=sw_emu
 else ifeq ($(VENDOR),INTEL)
     ifeq ($(DEVICE),)
         DEVICE=a10gx
@@ -39,7 +39,7 @@ ifeq ($(VENDOR),XILINX)
     ifeq ($(XILINX_SDX),)
         $(error XILINX_SDX must be set when targeting Xilinx FPGA cards.)
     endif	
-    CXX_ACC_FLAGS+= -L$(XILINX_SDX)/runtime/lib/x86_64 -lxilinxopencl
+    CXX_ACC_FLAGS+= -L$(XILINX_XRT)/lib -lxilinxopencl
 endif
 CXX_ACC_FLAGS+= -Wl,-rpath=./ -fPIC 
 
