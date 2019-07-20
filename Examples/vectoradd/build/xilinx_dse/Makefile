@@ -2,7 +2,7 @@
 #
 # Choose target FPGA platform & vendor
 VENDOR=XILINX
-DEVICE=xilinx_aws-vu9p-f1-04261818_dynamic_5_0
+DEVICE=xilinx_u250_xdma_201830_1
 #DEVICE=xilinx:adm-pcie-ku3:2ddr:3.3
 #DEVICE=xilinx:adm-pcie-ku3:2ddr-xpr:4.0
 
