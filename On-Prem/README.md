@@ -2,10 +2,10 @@
 
 ### Merlin Compiler Installation and Configuration
 #### 1. System Requirements
-    * Linux 64-bit with at least 32GB of RAM with Docker CE version 1.13.1 or higher installed. For instructions on installing Docker please refer  
+* Linux 64-bit with at least 32GB of RAM with Docker CE version 1.13.1 or higher installed. For instructions on installing Docker please refer  
       to https://docs.docker.com/install/.
-    * To use Merlin Compiler with Xilinx FPGA development boards, Xilinx SDAccel Development Environment v2018.3 or v2019.1 is required. Please follow instructions in SDx Environments Release Notes, Installation, and Licensing Guide to obtain a license and install the software and its supported FPGA platforms
-    * To use Merlin Compiler with Intel FPGA development boards, Intel FPGA SDK for OpenCL v18.1 or v19.1 is required. Please follow instructions in Intel FPGA SDK for OpenCL Getting Started Guide to obtain a license and install the software and its supported FPGA platforms.
+* To use Merlin Compiler with Xilinx FPGA development boards, Xilinx SDAccel Development Environment v2018.3 or v2019.1 is required. Please follow instructions in SDx Environments Release Notes, Installation, and Licensing Guide to obtain a license and install the software and its supported FPGA platforms
+* To use Merlin Compiler with Intel FPGA development boards, Intel FPGA SDK for OpenCL v18.1 or v19.1 is required. Please follow instructions in Intel FPGA SDK for OpenCL Getting Started Guide to obtain a license and install the software and its supported FPGA platforms.
 
 #### 2. Installing and Configuring Merlin Compiler
     Merlin Compiler is packaged as a tar gzip file. 
