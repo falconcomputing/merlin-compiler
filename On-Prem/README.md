@@ -10,7 +10,7 @@
   Merlin Compiler is packaged as a tar gzip file.
 * Download the tar gzip file from the link provided by the Falcon support team
 * Extract and install the tool using the following command  
-  $ tar xzvf <merlin_package>.tgz  
+  $ `tar xzvf <merlin_package>.tgz`  
   A directory named “merlin” is created after extraction
 * Follow the instructions in “merlin/README.md” to install and set up Merlin  
   Follow vendor tool installing instructions to install and configure vendor tools if they are not done yet. A single Merlin Compiler installation can be configured to support both Intel FPGA SDK for OpenCL and Xilinx SDAccel Environment.
@@ -31,7 +31,6 @@
 * Open the license file and replace the highlighted words as instructed below:  
    SERVER **hostname** host_id **port**  
    VENDOR falconlm **merlin_root**/license/falconlm  
-
    **hostname**:  license server hostname as returned by Linux hostname command  
    **port**: network port number for the license  
    **merlin_root**:  the path of the directory ‘merlin’ in your Merlin installation
