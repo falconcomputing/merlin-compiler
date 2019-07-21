@@ -19,7 +19,8 @@
   Merlin Compiler license is for Merlin Compiler only. Users need to obtain separate licenses from Intel and/or Xilinx for Merlin Compiler to work with Intel FPGA for OpenCL and Xilinx SDAccel Environments, respectively.
 
    **Obtaining Merlin Compiler License**  
-   Merlin Compiler supports floating licenses. Please send the MAC address of your license server to support@falcon-computing.com to order and retrieve the license file. Below is an example using ifconfig command to get the MAC address: 01:23:45:67:89:AB  
+   Merlin Compiler supports floating licenses. Please send the MAC address of your license server to support@falcon-computing.com to order and retrieve the license file.  
+   Below is an example using ifconfig command to get the MAC address: 01:23:45:67:89:AB  
 
     $ ifconfig -a  
     eth0      Link encap:Ethernet  HWaddr 01:23:45:67:89:AB  
