@@ -7,7 +7,7 @@
 * To use Merlin Compiler with Intel FPGA development boards, Intel FPGA SDK for OpenCL v18.1 or v19.1 is required. Please follow instructions in Intel FPGA SDK for OpenCL Getting Started Guide to obtain a license and install the software and its supported FPGA platforms.
 
 #### 2. Installing and Configuring Merlin Compiler
-  Merlin Compiler is packaged as a tar gzip file. 
+  Merlin Compiler is packaged as a tar gzip file.
 * Download the tar gzip file from the link provided by the Falcon support team
 * Extract and install the tool using the following command  
   $ tar xzvf <merlin_package>.tgz  
@@ -20,6 +20,7 @@
 
    **Obtaining Merlin Compiler License**  
    Merlin Compiler supports floating licenses. Please send the MAC address of your license server to support@falcon-computing.com to order and retrieve the license file. Below is an example using ifconfig command to get the MAC address: 01:23:45:67:89:AB  
+
     $ ifconfig -a  
     eth0      Link encap:Ethernet  HWaddr 01:23:45:67:89:AB  
               BROADCAST MULTICAST  MTU:1500  Metric:1  
@@ -33,7 +34,7 @@
 
    **hostname**:  license server hostname as returned by Linux hostname command  
    **port**: network port number for the license  
-   **merlin_root**:  the path of the directory ‘merlin’ in your Merlin installation  
+   **merlin_root**:  the path of the directory ‘merlin’ in your Merlin installation
 * Run the command below to starting the license server  
   $ **merlin_root**/license/lmgrd -c license.lic -l lmgrd.log  
   Check lmgrd.log file for the status and additional messages of the license server
