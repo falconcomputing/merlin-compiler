@@ -22,12 +22,9 @@ ACC_EXE=$(EXE)_acc
 EXE_ARGS=$(DATA_DIR)/input.data $(DATA_DIR)/check.data
 F1_EXE_ARGS=$(F1_DATA_DIR)/input.data $(F1_DATA_DIR)/check.data
 
-CXX_INC_DIRS=-I. -I$(INC_DIR) 
+CXX_INC_DIRS=-I. -I$(INC_DIR)
 CXX_FLAGS+= $(CXX_INC_DIRS)
 CXX_FLAGS+= -Wall -O3 -lrt
-CXX_FLAGS+=-DPLATFORM=\"$(PLATFORM)\" -DKERNEL=\"$(KERNEL_NAME)\" -DKERNEL_NAME=$(KERNEL_NAME)
-# Uncomment the following line to compile the Baseline
-CXX_FLAGS+= -DBASELINE=1 -DAUTODSE=1
 #CXX_FLAGS+= -g
 
 # Accelerated Kernel settings
@@ -38,10 +35,9 @@ KERNEL_INC_DIR=$(CXX_INC_DIRS)
 
 # MerlinCC Options
 AUTODSE=1
-CMP_OPT= -DBASELINE=1 -DAUTODSE=1
-LNK_OPT= -DBASELINE=1 -DAUTODSE=1
+CMP_OPT= -DBASELINE
+LNK_OPT= -DBASELINE
 
 #common make
 MCC_COMMON_DIR=../../../common
 include $(MCC_COMMON_DIR)/mcc_common.mk
-

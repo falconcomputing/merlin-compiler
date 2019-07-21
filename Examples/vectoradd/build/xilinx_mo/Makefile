@@ -3,8 +3,6 @@
 # Choose target FPGA platform & vendor
 VENDOR=XILINX
 DEVICE=xilinx_u250_xdma_201830_1
-#DEVICE=xilinx:adm-pcie-ku3:2ddr:3.3
-#DEVICE=xilinx:adm-pcie-ku3:2ddr-xpr:4.0
 #DEVICE=xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0
 
 # Edit Options per your setup if using AWS F1
@@ -13,7 +11,7 @@ DEVICE=xilinx_u250_xdma_201830_1
 # Host Code Compilation settings
 SRC_DIR:=../../src
 INC_DIR:=../../include
-COMMON_DIR:=../../common
+#COMMON_DIR:=../../common
 HOST_SRC_FILES=$(SRC_DIR)/main.cpp
 DATA_DIR=../../data
 F1_DATA_DIR=./data
@@ -26,11 +24,9 @@ ACC_EXE=$(EXE)_acc
 EXE_ARGS= 
 F1_EXE_ARGS= 
 
-
-CXX_INC_DIRS=-I . -I $(INC_DIR)
+CXX_INC_DIRS=-I. -I$(INC_DIR)
 CXX_FLAGS+= $(CXX_INC_DIRS)
 CXX_FLAGS+= -Wall -O3 -lrt
-CXX_FLAGS+=-DPLATFORM=\"$(PLATFORM)\" -DKERNEL=\"$(KERNEL_NAME)\" -DKERNEL_NAME=$(KERNEL_NAME)
 #CXX_FLAGS+= -g
 
 # Accelerated Kernel settings
@@ -39,10 +35,10 @@ KERNEL_SRC_FILES=$(SRC_DIR)/vec_add_kernel.cpp
 KERNEL_INC_DIR=$(CXX_INC_DIRS)
 
 # MerlinCC Options
-CMP_OPT= --attribute auto_func_inline=aggressive
-LNK_OPT= 
+#AUTODSE=1
+CMP_OPT=
+LNK_OPT=
 
 #common make
 MCC_COMMON_DIR=../../../common
 include $(MCC_COMMON_DIR)/mcc_common.mk
-

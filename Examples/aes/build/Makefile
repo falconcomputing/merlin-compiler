@@ -9,9 +9,9 @@ endif
 
 CPUSUBDIRS = cpu_multi_core 
 
-INTELSUBDIRS = intel_dse intel_mo 
+INTELSUBDIRS = intel_mo 
 
-XILINXSUBDIRS = xilinx_dse xilinx_mo 
+XILINXSUBDIRS = xilinx_mo 
 
 SUBDIRS = $(CPUSUBDIRS) $(INTELSUBDIRS) $(XILINXSUBDIRS)
 

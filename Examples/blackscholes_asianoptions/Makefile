@@ -27,9 +27,6 @@ default:
 cpu: 
 	$(MAKE) -C build $(MAKECMDGOALS) 
 
-intel: $(SUBDIRS)
-	$(MAKE) -C build $(MAKECMDGOALS)  
-
 xilinx: $(SUBDIRS)
 	$(MAKE) -C build $(MAKECMDGOALS)  
 

@@ -1,4 +1,4 @@
-# Copyright (C) 2017 Falcon Computing Solutions, Inc. - All rights reserved.
+# Copyright (C) 2019 Falcon Computing Solutions, Inc. - All rights reserved.
 #
 # Choose target FPGA platform & vendor
 VENDOR=XILINX
@@ -10,7 +10,7 @@ DEVICE=xilinx_aws-vu9p-f1-04261818_dynamic_5_0
 # Host Code Compilation settings
 SRC_DIR:=../../src
 INC_DIR:=../../include
-COMMON_DIR:=../../common
+#COMMON_DIR:=../../common
 HOST_SRC_FILES=$(SRC_DIR)/main.cpp $(SRC_DIR)/support.cpp $(SRC_DIR)/local_support.cpp
 DATA_DIR=../../data
 F1_DATA_DIR=./data
@@ -22,10 +22,9 @@ ACC_EXE=$(EXE)_acc
 EXE_ARGS=$(DATA_DIR)/input.data $(DATA_DIR)/check.data
 F1_EXE_ARGS=$(F1_DATA_DIR)/input.data $(F1_DATA_DIR)/check.data
 
-CXX_INC_DIRS=-I . -I $(INC_DIR)
+CXX_INC_DIRS=-I. -I$(INC_DIR)
 CXX_FLAGS+= $(CXX_INC_DIRS)
 CXX_FLAGS+= -Wall -O3 -lrt
-CXX_FLAGS+=-DPLATFORM=\"$(PLATFORM)\" -DKERNEL=\"$(KERNEL_NAME)\" -DKERNEL_NAME=$(KERNEL_NAME)
 #CXX_FLAGS+= -g
 
 # Accelerated Kernel settings
@@ -35,10 +34,9 @@ KERNEL_SRC_FILES=$(SRC_DIR)/aes.cpp $(SRC_DIR)/local_support.cpp
 KERNEL_INC_DIR=$(CXX_INC_DIRS)
 
 # MerlinCC Options
-CMP_OPT= --attribute auto_func_inline=aggressive
-LNK_OPT= 
+CMP_OPT=
+LNK_OPT=
 
 #common make
 MCC_COMMON_DIR=../../../common
 include $(MCC_COMMON_DIR)/mcc_common.mk
-
