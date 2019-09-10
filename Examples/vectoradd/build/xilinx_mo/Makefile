@@ -2,8 +2,8 @@
 #
 # Choose target FPGA platform & vendor
 VENDOR=XILINX
-DEVICE=xilinx_u250_xdma_201830_1
-#DEVICE=xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0
+#DEVICE=xilinx_u250_xdma_201830_1
+DEVICE=xilinx_aws-vu9p-f1-04261818_dynamic_5_0
 
 # Edit Options per your setup if using AWS F1
 #S3_OPT=-s3_bucket=fcs-fpga -s3_dcp_key=dcp -s3_logs_key=log
