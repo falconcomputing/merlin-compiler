@@ -69,7 +69,6 @@ Default region name [None]: us-east-1
 Run the command below to generate AFI from .xclbin file. A file with extension .awsxclbin will be generated after the compilation is completed.
 
 The .xclbin files can be located under: 
-* <example_folder>/build/xilinx_dse/
 * <example_folder>/build/xilinx_mo/
 
 Hint: If you haven't created the "fcs-fpga" s3 bucket, please refer to "Create a S3 bucket with the name “fcs-fpga"" in the <a href="PREREQUISITES.md">Prerequisites</a> section. 
@@ -81,8 +80,6 @@ export SDACCEL_DIR=/home/centos/aws-fpga/SDAccel
 cd vectoradd/build/xilinx_mo 
 $SDACCEL_DIR/tools/create_sdaccel_afi.sh -xclbin=vec_add_kernel_hw.xclbin -o=vec_add_kernel_hw -s3_bucket=fcs-fpga -s3_dcp_key=dcp -s3_logs_key=log
 ```
-
-Similarly, you can follow same steps for the Xilinx DSE compile under vectoradd/build/xilinx_dse.
 
 .awsxclbin file is a wrapper that has the information (AGFI ID) for the F1 runtime library to find the AFI to configure the F1 FPGA. Even though the .awsxclbin file is generated right away, the actual AFI generation can take up to an hour to complete. 
 Check on the status of the submitted AFI to AWS.
@@ -142,7 +139,6 @@ ls -la vectoradd_pkg.tar.gz
 ```
 This is the file you you need to transfer to AWS F1 instance for deployment in the next section.
 
-***Please note this is xilinx_mo folder can you can repeat the same steps above for xilinx_dse compile folder.***
 <br>
 <br>
 Start the next module: <a href="DEPLOY.md">Deploy on F1</a>
