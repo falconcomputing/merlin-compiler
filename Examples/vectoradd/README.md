@@ -40,7 +40,7 @@ cd merlin-compiler/Examples/vectoradd
  <TR><TD>      </TD><TD>data</TD><TD>data to test the correctness of the program</TD></TR>
  <TR><TD>      </TD><TD>Include</TD><TD>.h  header files</TD></TR>
  <TR><TD>      </TD><TD>src</TD><TD>.c, .cpp source files</TD></TR>
- <TR><TD>common</TD></TD>   <TD><TD>common to all Merlin examples</TD></TR>
+ <TR><TD>common</TD></TD>   <TD><TD>common to all examples</TD></TR>
 </TABLE>
  
 <br>
