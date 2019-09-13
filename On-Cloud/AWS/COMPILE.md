@@ -22,7 +22,7 @@ git clone https://github.com/falconcomputing/merlin-compiler.git
 cd merlin-compiler/Examples/vectoradd
 ```
 
-**View the available make commands**<br>
+**View the available make targets**<br>
 ```
 make 
 
@@ -30,14 +30,9 @@ make
 * Merlin Compiler Makefile                                                           *
 * Copyright (C) 2015-2019 Falcon Computing Solutions, Inc. - All rights reserved.    *
 *                                                                                    *
-* Usage: make <hardware_target> <command>                                            *
-* Available hardware targets:                                                        *
-* cpu    : compile for cpu only                                                      *
-* intel  : compile for intel FPGAs                                                   *
-* xilinx : compile for xilinx FPGAs (includes AWS F1)                                *
-* clean  : clean temp files                                                          *
+* Usage: make <target>                                                               *
 *                                                                                    *
-* Available commands:                                                                *
+* Available targets:                                                                 *
 *          run - Compile and run executable on CPU without Acceleration (cpu only)   *
 *   mcc_runsim - Generate kernel binary for simulation on CPU and run it             *
 * mcc_estimate - Get resource and performance estimates                              *
@@ -51,14 +46,14 @@ make
 ```
 ***Run your code on CPU***<br>
 ```
-make cpu run
+make run
 ```
 
 Notice how long the code took to finish execution on the CPU. Record the performance for future comparisons again the accelerated version.
 ***Compile the FPGA binary (bitstream)***
 Generate the  .xclbin file
 ```
-make xilinx mcc_bitgen
+make mcc_bitgen
 ```
 
 ***Generate an AFI file and submit to AWS***<br>

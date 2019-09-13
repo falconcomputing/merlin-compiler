@@ -2,7 +2,7 @@ n Examples
 <TABLE>
    <TR>
       <TD>Name</TD>
-      <TD>Application</TD>
+      <TD>Category</TD>
       <TD>Target FPGA</TD>
    </TR>
    <TR>

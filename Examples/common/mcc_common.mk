@@ -173,8 +173,8 @@ $(AFIGEN_OUTPUT).awsxclbin : $(BITGEN_OUTPUT)
 	cp $(AFIGEN_OUTPUT).awsxclbin $(AFIGEN_OUTPUT_TIMESTAMPED) 
 
 clean:
-	rm -rfv merlin.log *.o $(SRC_DIR)/data_int*.txt $(EXE)
-	rm -rf $(ACCGEN_OUTPUT).mco $(SIMGEN_OUTPUT).mco $(ACC_EXE) $(ACC_SIM_EXE) $(SIMGEN_OUTPUT).$(BIN_EXT) emconfig.json $(EST_OUTPUT) lib$(KERNEL_NAME)_sim.so lib$(KERNEL_NAME).so __merlin$(KERNEL_NAME).h
+	@rm -rfv merlin.log merlin.rpt *.o $(SRC_DIR)/data_int*.txt $(EXE)
+	@rm -rf $(ACCGEN_OUTPUT).mco $(SIMGEN_OUTPUT).mco $(ACC_EXE) $(ACC_SIM_EXE) $(SIMGEN_OUTPUT).$(BIN_EXT) emconfig.json $(EST_OUTPUT) lib$(KERNEL_NAME)_sim.so lib$(KERNEL_NAME).so __merlin$(KERNEL_NAME).h __merlin$(KERNEL_NAME)_sim.h .Mer .merlin_prj
 
 
 

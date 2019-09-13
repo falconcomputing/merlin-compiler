@@ -62,4 +62,4 @@ Step 8: Record the accelerate program execution time
 
 Step 9: Compare to the CPU execution recorded in step #2 
 
-***For a more detailed version of these instructions, please visit this: <a href="COMPILE.md">Compile on AWS with Merlin</a>.***
+***For a more detailed version of these instructions, please visit this: <a href="../../On-Cloud/AWS/COMPILE.md">Compile on AWS with Merlin</a>.***
