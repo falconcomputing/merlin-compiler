@@ -19,4 +19,4 @@ cd merlin-compiler/Examples/aes
 </TABLE>
 
 **COMPILE and RUN on AWS**<br>
-Fore detailed step-by-step instruction, please visit: <a href="../../On-Cloud/AWS/COMPILE.md">Compile on AWS with Merlin</a>.
+Fore detailed step-by-step instructions, please visit: <a href="../../On-Cloud/AWS/COMPILE.md">Compile on AWS with Merlin</a>.
