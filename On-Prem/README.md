@@ -6,11 +6,11 @@
 * To use Merlin Compiler with Xilinx FPGA development boards, Xilinx SDAccel v2019.1 or Vitis v2019.2 is required. Please follow instructions in SDx/Vitis Installation and Licensing Guide to obtain a license and install the software and its supported FPGA platforms
 * To use Merlin Compiler with Intel FPGA development boards, Intel FPGA SDK for OpenCL v18.1 or v19.1 is required. Please follow instructions in Intel FPGA SDK for OpenCL Getting Started Guide to obtain a license and install the software and its supported FPGA platforms.
 * In addition to vendor tools, Merlin also requires the following:
-  - The default shell should be Bash. To switch to Bash, 
+  - The default shell should be Bash. To switch to Bash,  
    $ `sudo ln -sf /bin/bash /bin/sh`
-  - Merlin requires GCC. To install GCC, 
+  - Merlin requires GCC. To install GCC,  
    $ `sudo yum install gcc-c++`
-  - Merlin requires unzip. To install unzip, 
+  - Merlin requires unzip. To install unzip,  
    $ `sudo yum install -y unzip`
 
 #### 2. Installing and Configuring Merlin Compiler
