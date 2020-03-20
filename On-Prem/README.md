@@ -3,8 +3,16 @@
 ### Merlin Compiler Installation and Configuration
 #### 1. System Requirements
 * Linux 64-bit with at least 32GB of RAM with Docker CE version 1.13.1 or higher installed. For instructions on installing Docker please refer to https://docs.docker.com/install/.
-* To use Merlin Compiler with Xilinx FPGA development boards, Xilinx SDAccel Development Environment v2018.3 or v2019.1 is required. Please follow instructions in SDx Environments Release Notes, Installation, and Licensing Guide to obtain a license and install the software and its supported FPGA platforms
+* To use Merlin Compiler with Xilinx FPGA development boards, Xilinx SDAccel v2019.1 or Vitis v2019.2 is required. Please follow instructions in SDx/Vitis Installation and Licensing Guide to obtain a license and install the software and its supported FPGA platforms
 * To use Merlin Compiler with Intel FPGA development boards, Intel FPGA SDK for OpenCL v18.1 or v19.1 is required. Please follow instructions in Intel FPGA SDK for OpenCL Getting Started Guide to obtain a license and install the software and its supported FPGA platforms.
+* In addition to vendor tools, Merlin also requires the following:
+  - The default shell should be Bash. To switch to Bash,
+   $ `sudo ln -sf /bin/bash /bin/sh`
+  - Merlin requires GCC. To install GCC,
+   $ `sudo yum install gcc-c++`
+  - Merlin requires unzip. To install unzip,
+   $ `sudo yum install -y unzip`
+  - 
 
 #### 2. Installing and Configuring Merlin Compiler
   Merlin Compiler is packaged as a tar gzip file.
@@ -12,11 +20,11 @@
 * Extract and install the tool using the following command  
   $ `tar xzvf <merlin_package>.tgz`  
   A directory named “merlin” is created after extraction
-* Follow the instructions in “merlin/README.md” to install and set up Merlin  
-  Follow vendor tool installing instructions to install and configure vendor tools if they are not done yet. A single Merlin Compiler installation can be configured to support both Intel FPGA SDK for OpenCL and Xilinx SDAccel Environment.
+* Follow the instructions in **merlin/README.md** to install and set up Merlin  
+  Follow Xilinx/Intel instructions to install and configure vendor tools. A single Merlin Compiler installation can be configured to support both Intel FPGA SDK for OpenCL and Xilinx SDAccel/Vitis.
 
 #### 3. Obtaining and Installing Merlin Compiler License 
-  Merlin Compiler license is for Merlin Compiler only. Users need to obtain separate licenses from Intel and/or Xilinx for Merlin Compiler to work with Intel FPGA for OpenCL and Xilinx SDAccel Environments, respectively.
+  Merlin Compiler license is for Merlin Compiler only. Users need to obtain separate licenses from Intel and/or Xilinx for their tools.
 
    **Obtaining Merlin Compiler License**  
    Merlin Compiler supports floating licenses. Please send the MAC address of your license server to support@falcon-computing.com to order and retrieve the license file.  
