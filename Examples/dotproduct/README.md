@@ -2,12 +2,6 @@
 This example case computes the dot product of two vectors of 4K single precision floating point numbers.
 It uses the Merlin option '-funsafe-math-optimizations'.
 
-**DOWLOAD THE REPOSITORY**<br>
-```
-git clone https://github.com/falconcomputing/merlin-compiler.git
-cd merlin-compiler/Examples/dotproduct
-```
-
 **FILE HIERARCHY**<br>
 <TABLE>
  <TR><TH>Folder</TH><TH>Sub-folder</TH><TH>Description</TH></TR>
@@ -18,4 +12,4 @@ cd merlin-compiler/Examples/dotproduct
 </TABLE>
 
 **COMPILE and RUN on AWS**<br>
-Fore detailed step-by-step instructions, please visit: <a href="../../On-Cloud/AWS/COMPILE.md">Compile on AWS with Merlin</a>.
+For detailed step-by-step instructions, please visit: <a href="../../On-Cloud/AWS/COMPILE.md">Compile on AWS with Merlin</a>.

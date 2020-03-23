@@ -87,7 +87,7 @@ Next step is to generate the host binary and library files:
 make mcc_accexe
 ```
 
-Note that these examples are set up using AWS F1 platform. To use another platform, you just need to modify the varialbe *DEVICE* in Makefile. For example, to use Xilinx Alveo U250, you can set the following:  
+Note that these examples are set up using AWS F1 platform. To use another platform, you just need to modify the variable *DEVICE* in Makefile. For example, to use Xilinx Alveo U250, you can set the following:  
 ```
 DEVICE=xilinx_u250_xdma_201830_1
 ```
