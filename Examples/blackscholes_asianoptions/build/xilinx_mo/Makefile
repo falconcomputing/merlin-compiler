@@ -2,7 +2,8 @@
 #
 # Choose target FPGA platform & vendor
 VENDOR=XILINX
-DEVICE=xilinx_aws-vu9p-f1-04261818_dynamic_5_0
+PLATFORM=vitis::xilinx_u250_xdma_201830_1
+#DEVICE=xilinx_aws-vu9p-f1-04261818_dynamic_5_0
 
 # Edit Options per your setup if using AWS F1
 #S3_OPT=-s3_bucket=fcs-fpga -s3_dcp_key=dcp -s3_logs_key=log

@@ -12,20 +12,10 @@ MAKEFLAGS += --no-print-directory
 ifeq ($(VENDOR),CPU)
      $(info This is CPU flow only - No FPGA compile)
 else ifeq ($(VENDOR),XILINX)
-    ifeq ($(DEVICE),F1)
-        PLATFORM=sdaccel::xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0
-    else ifeq ($(DEVICE),)
-        DEVICE=xilinx:adm-pcie-ku3:2ddr-xpr:4.0
-    endif
-    PLATFORM=sdaccel::$(DEVICE)
     BIN_EXT=xclbin
     SIM_ENV=XCL_EMULATION_MODE
     SIM_ENV_VAL=sw_emu
 else ifeq ($(VENDOR),INTEL)
-    ifeq ($(DEVICE),)
-        DEVICE=a10gx
-    endif
-    PLATFORM=aocl::$(DEVICE)
     BIN_EXT=aocx
     SIM_ENV=CL_CONTEXT_EMULATOR_DEVICE_ALTERA
     SIM_ENV_VAL=altera
@@ -36,9 +26,9 @@ endif
 # Additional CXX flags used when compiling accelerated executable
 CXX_ACC_FLAGS+= -D MCC_ACC -L. -Wl,-rpath=./ -fPIC
 ifeq ($(VENDOR),XILINX)
-    ifeq ($(XILINX_SDX),)
-        $(error XILINX_SDX must be set when targeting Xilinx FPGA cards.)
-    endif	
+    #ifeq ($(XILINX_SDX),)
+    #    $(error XILINX_SDX must be set when targeting Xilinx FPGA cards.)
+    #endif	
     CXX_ACC_FLAGS+= -L$(XILINX_XRT)/lib -lxilinxopencl
 endif
 CXX_ACC_FLAGS+= -Wl,-rpath=./ -fPIC 
