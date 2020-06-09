@@ -35,8 +35,8 @@ KERNEL_SRC_FILES=$(SRC_DIR)/aes.cpp $(SRC_DIR)/local_support.cpp
 KERNEL_INC_DIR=$(CXX_INC_DIRS)
 
 # MerlinCC Options
-CMP_OPT=-d11
-LNK_OPT=-d11
+CMP_OPT=
+LNK_OPT=
 
 #common make
 MCC_COMMON_DIR=../../../common
