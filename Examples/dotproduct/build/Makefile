@@ -3,7 +3,7 @@
 # Choose target FPGA platform & vendor
 VENDOR=XILINX
 PLATFORM=vitis::xilinx_u250_xdma_201830_1
-#DEVICE=xilinx_aws-vu9p-f1-04261818_dynamic_5_0
+#PLATFORM=vitis::xilinx_aws-vu9p-f1_shell-v04261818_201920_2
 
 # Edit Options per your setup if using AWS F1
 #S3_OPT=-s3_bucket=fcs-fpga -s3_dcp_key=dcp -s3_logs_key=log
@@ -36,7 +36,7 @@ KERNEL_INC_DIR=$(CXX_INC_DIRS)
 
 # MerlinCC Options
 #AUTODSE=1
-CMP_OPT=-funsafe-math-optimizations --attribute memory_burst=off
+CMP_OPT=-funsafe-math-optimizations
 LNK_OPT=
 
 #common make

@@ -176,10 +176,8 @@ ecb3 : for(i = 1, rcon = 1; i < 14; ++i)
 void aes256_encrypt_ecb_kernel(uint8_t key[32], uint8_t data[16*BATCH])
 {
 #ifndef BASELINE
-#pragma ACCEL parallel factor=2
-#pragma ACCEL tile factor=4096
 #pragma ACCEL pipeline
-#pragma ACCEL false_dependence variable=data
+#pragma ACCEL tile factor=4096 parallel_factor=4
 #endif
    for (int i = 0; i < BATCH; i++)
    {

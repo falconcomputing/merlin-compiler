@@ -3,7 +3,7 @@
 # Choose target FPGA platform & vendor
 VENDOR=XILINX
 PLATFORM=vitis::xilinx_u250_xdma_201830_1
-#DEVICE=xilinx_aws-vu9p-f1-04261818_dynamic_5_0
+#PLATFORM=vitis::xilinx_aws-vu9p-f1_shell-v04261818_201920_2
 
 # Edit Options per your setup if using AWS F1
 #S3_OPT=-s3_bucket=fcs-fpga -s3_dcp_key=dcp -s3_logs_key=log
@@ -35,8 +35,8 @@ KERNEL_SRC_FILES=$(SRC_DIR)/aes.cpp $(SRC_DIR)/local_support.cpp
 KERNEL_INC_DIR=$(CXX_INC_DIRS)
 
 # MerlinCC Options
-CMP_OPT=
-LNK_OPT=
+CMP_OPT=-d11
+LNK_OPT=-d11
 
 #common make
 MCC_COMMON_DIR=../../../common
